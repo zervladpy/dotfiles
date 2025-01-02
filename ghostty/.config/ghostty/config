@@ -1,0 +1,24 @@
+##############
+# KEYBINDING #
+##############
+
+keybind = alt+n=new_split:right
+keybind = alt+q=close_surface
+
+keybind = alt+right=goto_split:right
+keybind = alt+left=goto_split:left
+
+keybind = alt+r=reload_config
+
+##############
+# APPEARENCE #
+##############
+
+theme = "Dark+"
+
+font-size = 14
+
+window-padding-x = 5
+window-padding-y = 5
+
+adw-toolbar-style = flat

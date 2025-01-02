@@ -1,0 +1,154 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format="""
+$os\
+$username\
+$hostname\
+$git_status\
+$git_branch\
+$directory\
+$docker_context\
+$fill\
+$dart\
+$java\
+$kotlin\
+$lua\
+$nodejs\
+$php\
+$python\
+$rust\
+$gradle\
+$cmd_duration $jobs $time $memory_usage\
+$line_break\
+$character\
+"""
+
+[username]
+format = " [$user]($style) "
+show_always = true
+disabled = false
+
+[hostname]
+ssh_symbol = " "
+
+[fill]
+symbol = " "
+
+[directory]
+style = "blue"
+read_only = " 󰌾"
+truncation_length = 4
+truncate_to_repo = false
+format = "[$path](bold $style)[$read_only]($read_only_style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[git_commit]
+tag_symbol = '  '
+
+[git_status]
+ahead = "⇡${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+behind = "⇣${count}"
+
+[dart]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[java]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[kotlin]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[lua]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[php]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[python]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[rust]
+format = "[$symbol($version )]($style)"
+symbol = "󱘗 "
+
+[gradle]
+format = "[$symbol($version )]($style)"
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[memory_usage]
+format = "$symbol[$ram]($style)"
+symbol = "󰍛 "
+disabled = false
+threshold = -1
+
+[package]
+symbol = "󰏗 "
+
+[os]
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
