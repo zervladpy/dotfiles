@@ -29,7 +29,8 @@ return {
           "ast_grep",
           "dockerls",
           "yamlls",
-          "biome"
+          "biome",
+          "astro"
         },
       })
     end,
@@ -80,6 +81,10 @@ return {
       })
 
       lspconfig.tailwindcss.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.astro.setup({
         capabilities = capabilities,
       })
 
